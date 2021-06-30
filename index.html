@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!--REQUISITOS
+    validaçao cpf: pagina contato linha 83
+     LINHA 135 INDEX
+    Css: Estilizar o rodapé usando exclusivamente css.
+    <aside> PAGINA index LINHA 214
+    <article> PAGINA tratamentos LINHA 55
+    <Estilo nos botões e texto>  PAGINA index LINHA 67-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="./bootstrap-4.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="estiloboot.css" media="screen" />
+    <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon" /> 
+    <title>Matheus Freire - Fisioterapeuta</title>
+</head>
+<body>
+<!--HEADER-->
+<!--HEADER-->
+<header id=topo>
+    <nav class="navbar navbar-expand-lg navbar-light container-fluid py-3 fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon bg-light"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav ml-auto text-left">
+            <li class="nav-item">
+              <a class="nav-link ml-5 text-white" href="index.html">Home</a>
+             <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle ml-5 text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Serviços</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item " href="tratamentos.html">Tratamentos</a>
+                      <a class="dropdown-item " href="lesoes.html">Lesões</a>
+                  </div>
+              </li>
+            <li class="nav-item">   
+                <a class="nav-link ml-5 text-white" href="ajuda.html">FAQ</a>
+              </li>
+            <li class="nav-item">   
+                <a class="nav-link ml-5 text-white" href="contato.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+</header>
+    <!--ENTRADA COM VIDEO-->
+    <section id="home">
+        <video id="backgroundVideo" controls="" autoplay="" muted="" loop=""> 
+            <source src="img/pexels-yan-5793294.mp4" type="video/mp4" class="img-fluid">
+        </video>
+    <!--QUE FICA DENTRO DO VIDEO -->
+    <div  class="container">
+        <div class="row pt-5">
+            <div class="home-text col-md-8 col-sm-12 mt-5">
+                <div id="home-text" class="home-text text-center"><img src="img/LOGO MATHEUS BRANCA .png" width="70%"></div>
+                <ul class="section-btn text-center">
+                    <a href="contato.html"><span class="text-justifiy" data-hover="Agende sua Consulta">Agende sua Consulta</span></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <div class="overlay"></div>
+    </section>
+
+    <!--Introducao-->
+<main>
+    <section id="about">
+        <div class="container p-2">
+            <div class="row p-2 m-2">
+                <div class="about-text text-center p-5 text-muted col-md-10 col-sm-12 mx-auto">
+                    <img class="rounded-circle shadow-lg p-3 mb-5 rounded" src="img/matheus.jpg" alt="logo" width="300" height="300">
+                    <h1 class="nome pb-3"> MATHEUS FREIRE - FISIOTERAUTA</h1>
+                    <p> Fisioterapeuta formado pelo Centro Universitário UNINTA em (2018). Formação em Osteopatia Estrutural e
+                        Quiropraxia Clínica pelo Instituto Ceariafisio. Massoterapeuta formado pelo SENAC. Atuo na Fisioterapia Traumato Ortopédica e Desportiva com
+                        programas de intervenções em atletas amadores e profissionais na prevenção e tratamento de lesões e dores na
+                        Coluna Vertebral á fazerem suas atividades com qualidade de vida e bons resultados sem sentir dor e sem
+                        recorrer a medicação e cirurgia. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--BOXES PARA INFO-->
+    <section id="project" class="p-5 pt-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="project-item">
+                        <a href="ajuda.html">
+                            <img src="img/duvidas.png" class="img-fluid">
+                            <div class="project-overlay">
+                                <h3 class="text-white"> Clique aqui</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="project-item">
+                        <a href="tratamentos.html">
+                            <img src="img/tratamentos.png" class="img-fluid">
+                            <div class="project-overlay">
+                                <h3 class="text-white"> Clique aqui</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>  
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="project-item">
+                        <a href="contato.html">
+                            <img src="img/agenda.png" class="img-fluid">
+                            <div class="project-overlay">
+                                <h3 class="text-white"> Clique aqui</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <!--seta-->
+    <section>
+        <div>
+            <a href="#topo"><img src="img/seta-para-cima.png" alt="ícone seta para cima" id="img-seta"></a>
+        </div>
+    </section>
+
+    <!--serviços-->
+    <section id="service">
+        <h1 class="text-center p-2"> Nossos serviços</h1>
+        <h5 class="text-center text-muted pb-2"> Conheça o nossos serviços</h5>
+        <div class="container">
+            <div class="row mx-auto">
+                <div class="col-md-4 col-sm-6 col-12 pb-5 ml-2">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="img/osteopatia.png"  class="img-fluid" alt="Osteopatia">
+                        <div class="card-body">
+                          <h5 class="card-title">Osteopatia</h5>
+                          <p class="card-text">É uma prática de medicina alternativa, que consiste na utilização de técnicas de mobilização e manipulação articular.</p>
+                          <a href="tratamentos.html" class="btn btn-primary">Visitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-12 pb-5 ml-2">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="img/quiropraxia.png"  class="img-fluid" alt="Quiropraxia">
+                        <div class="card-body">
+                          <h5 class="card-title">Quiropraxia</h5>
+                          <p class="card-text">É uma forma de diagnóstico e tratamento de condições do sistema músculo-esquelético, principalmente da coluna vertebral.</p>
+                          <a href="tratamentos.html" class="btn btn-primary">Visitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-12 pb-5 ml-2">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="img/tratamentoColuna.png" class="img-fluid" alt="Tratamento da Coluna Vertebral">
+                        <div class="card-body">
+                          <h5 class="card-title">Tratamento da Coluna Vertebral</h5>
+                          <p class="card-text">É um método não cirurgico que utiliza técnicas de fisioterapia validadas cientificamente.</p>
+                          <a href="tratamentos.html" class="btn btn-primary">Visitar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <aside>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-12 pb-5 ml-2">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="img/manidetecidos.png" class="img-fluid" alt="Manipulação de tecidos moles (liberação)">
+                            <div class="card-body">
+                            <h5 class="card-title">Manipulação de tecidos moles (liberação)</h5>
+                            <p class="card-text">É um tratamentos que visam melhorar a mobilidade dos tecidos moles e aqueles com má circulação devido à inatividade ou aumento da tensão</p>
+                            <a href="tratamentos.html" class="btn btn-primary">Visitar</a>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-12 pb-5 ml-2">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="img/programa.png" class="img-fluid" alt="Programa terapêutico preventivo">
+                            <div class="card-body">
+                            <h5 class="card-title">Programa terapêutico preventivo</h5>
+                            <p class="card-text">Os treinamentos visam não apenas reabilitar o paciente, mas também evitar complicações que possam comprometer sua qualidade de vida.</p>
+                            <a href="tratamentos.html" class="btn btn-primary">Visitar</a>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-12 pb-5 ml-2">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="img/ventosa.png" class="img-fluid" alt="Ventosa">
+                            <div class="card-body">
+                            <h5 class="card-title"> Ventosaterapia </h5>
+                            <p class="card-text">É um tratamento com copos que criam um vácuo contraido com a pele promove sua sucção. É desta forma que os tecidos musculares são liberados e a circulação sanguínea</p>
+                            <a href="tratamentos.html" class="btn btn-primary">Visitar</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </aside>
+    </section>
+
+
+<!--Depoimentos-->
+    <aside>
+        <section id="team" class="h-100">
+            <div class="container p-5">
+                <div class="swiper-container p-5">
+                    <h1 class="text-center pb-3"> Depoimentos </h1>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide col-lg-5 col-md-6 col-12">
+                        <img src="img/Depoimentos.png" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide col-lg-5 col-md-6 col-12">
+                            <img src="img/Depoimentos.png" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide col-lg-5 col-md-6 col-12">
+                            <img src="img/Depoimentos.png" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide col-lg-5 col-md-6 col-12">
+                            <img src="img/Depoimentos.png" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide col-lg-5 col-md-6 col-12">
+                            <img src="img/Depoimentos.png" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide col-lg-5 col-md-6 col-12">
+                            <img src="img/Depoimentos.png" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+    </aside>
+</main>
+
+
+<!--FOTTER-->
+<div class="footer-content">
+    <img src="img/LOGO MATHEUS.png" width="30%">
+    <ul>
+        <li>
+            <img src="img/local.png" width="8%"> R. Cel Wenceslau Soares, Centro
+            <hr></br>
+            <img src="img/email.png" width="8%"> matheusfreirecarv@gmail.com
+            <hr></br>
+            <img src="img/call.png" width="8%">  (88) 99801-4042
+        </li>
+    </ul>
+    <ul class="socials">
+        <li><a href="https://www.facebook.com/Matheus-Freire-113189996720479/"><img  src="img/facebook.png" width="80%"></a></li>
+        <li><a href="https://www.instagram.com/matheus.freirec/?igshid=5fr1i0e4ymd6&fbclid=IwAR2WrmnRUluw8EQNv7VxtWOCImPR1M8KO-SCzb42xc_GrfgX2MYRdVqdHHI"><img src="img/instagram.png" width="80%"></a></li>
+        <li><a href="https://api.whatsapp.com/send?phone=5588998014042"><img src="img/whatsapp.png" width="80%"></a></li>
+    </ul>
+</div>
+
+
+    <!--boot-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./bootstrap-4.1.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./bootstrap-4.1.3-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!--JAVASCRIPT-->
+    <script src="libs/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="scriptboot.js"></script>
+</body>
+</html>

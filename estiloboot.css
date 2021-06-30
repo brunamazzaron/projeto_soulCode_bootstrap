@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 50px;
+}
+
+h2{
+    font-size: 70px;
+    line-height: 40px;
+    margin-top: 0;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 32px;
+}
+
+h4{
+    color: #505050;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+
+p{
+    color: #757575;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0.5px;
+}
+/***********************MENU*********************/
+.navbar{
+    font-family: 'Source Sans Pro', sans-serif;
+    background:#08456d ;
+}
+.navbar .navbar-brand{
+    font-weight: normal;
+    font-size: 25px;
+    background-color: #08456d;
+}
+
+.navbar .navbar-nav .nav-link{
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: all 0.4s ease-in;
+    /*Ela permite definir a transição entre dois estados de um elemento. segundo valor que pode ser analisado como tempo é atribuído*/
+
+}
+
+.navbar .navbar-nav .nav-link:hover{
+    background: transparent;
+    color:#fff ;
+}
+
+.navbar .navbar-nav .nav-link:after{
+    content:"";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: transparent;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-link:hover::after{
+    width: 100%;
+    background: #E3e3e9;
+    color: #E3e3e9;
+}
+
+
+/************************Home***********************/
+
+#home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+#home video{
+    position: fixed;
+    top:50px;
+    min-height: 100%;
+    min-width: 100%;
+    height: auto;
+    width: 500vh;
+    transform: translateX(-50%) translateY(-50%); /*reposiciona um elemento horizontalmente no plano 2D.*/
+    background-size:contain;
+    object-fit: cover; /*A propriedade CSS object-fit especifica como o conteúdo de um elemento substituído deve ser ajustado à caixa estabelecida pela altura e largura usadas*/
+    box-sizing: border-box;
+    overflow: hidden ;
+    z-index: -100;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+.home-text{
+    margin: auto;
+}
+
+#home .overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(231, 220, 220, 0.363);
+}
+
+#home .home-text{
+    z-index: 99;
+}
+
+#home p{
+    color: rgba(250,250,250,0.7)
+}
+/*********************SETA**********************/
+#img-seta {
+    margin-right: 14px;
+    position: fixed;
+    bottom: 60px;
+    right: 0px;
+    z-index: 100;
+}
+
+/*GERAL*/
+
+#about,#project,#team,#intro, #service, #treat, #services-area{
+    background-color: #F5F1F1;
+}
+
+/*******************ABOUT********************/
+
+#about{
+    position: relative;
+}
+
+#about h3{
+    font-size: 14px;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+}
+
+/*****************Galery*********************/
+#project .project-item{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 25px;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#project .project-item .project-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(8, 69, 109, 0.521);
+    opacity: 0;
+    transition: all ease-in-out 0.4s; /*especifica um efeito de transição com um início lento*/
+}
+
+#project .project-item:hover .project-overlay{
+    opacity: 1;
+}
+
+#project .project-item .project-overlay .project-info{
+    padding: 12em 0;
+}
+
+.project-info h1{
+    color: #fff;
+    margin:0;
+}
+.project-info h3{
+    color: #d9d9d9;
+    margin-top: 0;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+
+.project-item img{  
+    transition: all ease-in-out 0.4s;
+}
+
+.project-item:hover img{
+    transition: scale(1.1);
+}
+
+
+/******************TEAM*******************/
+
+#team{
+    color: #08456d;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+} 
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    background: #F5F1F1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*--especifica como o conteúdo de um elemento substituído deve ser ajustado à caixa estabelecida pela altura e largura usadas*/
+}
+
+.swiper-button-next{
+    padding-left: 50px;
+    color: black;
+}
+
+.swiper-button-prev{
+    padding-right: 50px;
+    color: black;
+}
+.rounded-circle{
+    background: #08456d;
+}
+
+#service{
+    color: #08456d;
+    background-image: url("img/coluna.png") /*50% 0 repeat-y fixed*/;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+/************BUTTONS***************/
+
+.section-btn{
+    margin:32px 0 0 0;
+    padding: 0;
+}
+
+.section-btn a{
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    line-height: 45px;
+    perspective: 1000px; /*perspective propriedade é usada para dar uma perspectiva a um elemento posicionado em 3D.*/
+}
+
+.section-btn a span{
+    position: relative;
+    display: inline-block;
+    font-size:18px;
+    font-weight: normal;
+    letter-spacing:0.5px ;
+    padding:2px 27px;
+    background:  #08456d;
+    border-radius: 1px;
+    transition: transform 0.3s ;
+    transform-origin: 50% 0;
+    transform-style: preserve-3d; /*propriedade especifica como os elementos aninhados são renderizados no espaço 3D.*/
+}
+
+.section-btn a span::before{
+    position: absolute;
+    top:100%;
+    left:0;
+    height: 100%;
+    width: 100%;
+    color:#fff;
+    background: #cc942c;
+    border-radius: 1px;
+    padding: 2px 27px;
+    transition: background 0.3s;
+    transform: rotateX(-90deg);
+    content: attr(data-hover);
+    transform-origin: 50% 0;
+}
+
+.section-btn a:hover span,
+.section-btn a:focus span{
+transform: rotateX(90deg) translateY(-22px);
+}
+
+/***************FORMULARIO*******************/
+
+#form{
+    color: #08456d;
+    background-color: #F5F1F1;
+}
+
+#form-contato input{
+    height: 55px;
+    line-height: 45px;
+}
+
+
+.form-control{
+    border: none;
+    box-shadow: none;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 22px;
+}
+
+
+/*************FOOTER***************/
+.footer-content{
+    color: black;
+    background: white;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+}
+.footer-content{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+
+}
+
+.footer-content p{
+    color: white;
+    max-width: 100%;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size:14px;
+}
+
+.footer-content ul li{
+    list-style: none;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    color:white;
+}
+
+/* css responsivo footer */
+@media only screen and (max-width: 720px) {
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*************INTRO*****************/
+
+#intro{
+    color:#08456d
+}
+/***********TREAT**************/
+
+.h1{
+    font-size: 4rem;
+    color: white;
+}
+
+.paragrafo{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+}
